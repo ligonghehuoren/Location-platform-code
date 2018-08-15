@@ -1,0 +1,3 @@
+一、该项目实现了区域内用户的管控和IMSI获取。其中IMSI获取方式有两种：
+１）基站通过对用户下发identity request信令并解析用户反馈的identity response获取用户IMSI（需要在TAC不同的情况下才能进行）
+２）基站通过下发TAU REJECT和ATTACH REJECT信令使用户上报IMSI。（但是该方案不能实现管控，由于用户在重试尝试接入几次被拒绝后就选择其他小区）
